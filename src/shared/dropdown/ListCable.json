@@ -1,0 +1,13 @@
+[
+  { "name": "Abuja Electricity Distribution Plc", "code": "AEDC" },
+  { "name": "Benin Electricity Distribution Plc", "code": "BEDC" },
+  { "name": "Eko Electricity Distribution Plc", "code": "EKEDC" },
+  { "name": "Enugu Electricity Distribution Plc ", "code": "EEDC" },
+  { "name": "Ibadan Electricity Distribution Plc", "code": "IBEDC" },
+  { "name": "Ikeja Electricity Distribution Company Plc", "code": "IKEDC" },
+  { "name": "Jos Electricity Distribution Plc", "code": "JEDPLC" },
+  { "name": "Kaduna Electricity Distribution Plc", "code": "KAEDCO" },
+  { "name": "Kano Electricity Distribution Plc", "code": "KEDCO" },
+  { "name": "Port Harcourt Electricity Distribution Plc", "code": "PHEDC" },
+  { "name": "Yola Electricity Distribution Company Plc", "code": "YEDC" }
+]

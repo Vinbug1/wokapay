@@ -1,0 +1,37 @@
+[
+  { "name": "Ministry Of Agriculture And Natural Resources ", "code": "MANR" },
+  { "name": "Ministry Of Aviation", "code": "MOA" },
+  { "name": "Ministry Of Commerce And Tourism", "code": "MOCAT" },
+  { "name": "Ministry Of Defence", "code": "MOF" },
+  { "name": "Ministry Of Education And Youth Development", "code": "MOEAYD" },
+  { "name": "Ministry Of Environment", "code": "MOE" },
+  { "name": "Ministry Of Fedral Capital Territory", "code": "MOFCT" },
+  { "name": "Ministry Of Finance And Economic Development", "code": "MOFAED" },
+  { "name": "Ministry Of Foreign Affairs", "code": "MOFA" },
+  { "name": "Ministry Of Communication", "code": "MOC" },
+  { "name": "Ministry Of Health And Social Service", "code": "MOHASS" },
+  { "name": "Ministry Of Industries ", "code": "MOF" },
+  { "name": "Ministry Of Information and Culture", "code": "MOIAC" },
+  { "name": "Ministry Of Internal Affairs", "code": "MOIA" },
+  { "name": "Ministry Of Justice", "code": "MOJ" },
+  { "name": "Ministry Of Labour And Productivity", "code": "MOLAP" },
+  { "name": "Ministry Of Petroleum Resources", "code": "MOPR" },
+  { "name": "Federal Ministry Of Power And Steel", "code": "FMOPAS" },
+  { "name": "Ministry Of Science And Technology ", "code": "MOSAT" },
+  {
+    "name": "Federal Ministry Of Solid Minerals Development",
+    "code": "FMOSMD"
+  },
+  { "name": "FEDERAL MINSTRY OF SPECIAL DUTIES", "code": "FMOSD" },
+  { "name": "FEDERAL MINSTRY OF TRANSPORT", "code": "FMOT" },
+  {
+    "name": "FEDERAL MINSTRY OF WATER RESOURCES & RURAL DEVELOPMENT",
+    "code": "FMOWRARD"
+  },
+  {
+    "name": "FEDERAL MINSTRY OF WOMEN AFFAIRS AND SOCIAL DEVELOPMENT",
+    "code": "FMOWAASD"
+  },
+  { "name": "FEDERAL MINSTRY OF WORKS AND HOUSING", "code": "FMOWAH" },
+  { "name": "FEDERAL MINSTRY OF YOUTH & SPORT", "code": "FMOYAS" }
+]

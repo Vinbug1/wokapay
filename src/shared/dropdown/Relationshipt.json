@@ -1,0 +1,18 @@
+[
+  { "name": "Father", "code": "FTHR" },
+  { "name": "Mother", "code": "MTHR" },
+  { "name": "Son", "code": "SN" },
+  { "name": "Daughter", "code": "DGR" },
+  { "name": "Husband", "code": "HBD" },
+  { "name": "Wife", "code": "WF" },
+  { "name": "Brother", "code": "BTHR" },
+  { "name": "Sister", "code": "STR" },
+  { "name": "Grandfather", "code": "GFTHR" },
+  { "name": "Grandmother", "code": "GMTHR" },
+  { "name": "Grandson", "code": "GSN" },
+  { "name": "Uncle", "code": "UCL" },
+  { "name": "Aunt", "code": "ANT" },
+  { "name": "Nephew", "code": "NPW" },
+  { "name": "Niece", "code": "NCI" },
+  { "name": "Cousins", "code": "CSI" }
+]
