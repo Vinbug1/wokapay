@@ -20,9 +20,10 @@ const SideNavigation = () => {
           textAlign: "center",
           alignItems: "center",
           alignSelf: "center",
+          //paddingTop: 40,
         },
         drawerItemStyle: {
-          height: "75%",
+          height: "45%",
           width: "120%",
           left: "-10%",
           top: Platform.OS === "ios" ? "-55%" : "-40%",
@@ -36,6 +37,7 @@ const SideNavigation = () => {
         options={{
           headerTintColor: "white",
           headerTitle: () => null,
+          paddingTop: 40,
         }}
       />
       <Drawer.Screen
@@ -44,6 +46,7 @@ const SideNavigation = () => {
         options={{
           headerTintColor: "white",
           headerTitle: () => null,
+          padding: 40,
         }}
       />
     </Drawer.Navigator>
