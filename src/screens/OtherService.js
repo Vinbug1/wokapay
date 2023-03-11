@@ -47,7 +47,7 @@ const OtherService = () => {
           </TouchableOpacity>
         </View>
         <View style={{ margin: 9.5 }}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate("Loan")}>
             <View style={styles.kuimg}>
               <MaterialCommunityIcons
                 name="hand-coin"

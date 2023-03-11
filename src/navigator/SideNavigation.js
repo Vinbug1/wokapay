@@ -3,6 +3,7 @@ import { createDrawerNavigator } from "@react-navigation/drawer";
 import LoneHome from "../screens/LoneHome";
 import { Platform } from "react-native";
 import CustomSidebarMenu from "../screens/CustomSidebarMenu";
+import Contribution from "../screens/Contribution";
 
 const Drawer = createDrawerNavigator();
 const SideNavigation = () => {
@@ -32,7 +33,7 @@ const SideNavigation = () => {
       drawerContent={(props) => <CustomSidebarMenu {...props} />}
     >
       <Drawer.Screen
-        name="LoneHome"
+        name="Home"
         component={LoneHome}
         options={{
           headerTintColor: "white",
@@ -41,8 +42,8 @@ const SideNavigation = () => {
         }}
       />
       <Drawer.Screen
-        name="Home"
-        component={LoneHome}
+        name="Contribution"
+        component={Contribution}
         options={{
           headerTintColor: "white",
           headerTitle: () => null,

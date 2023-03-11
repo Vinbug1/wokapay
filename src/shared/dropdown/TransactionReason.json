@@ -1,0 +1,6 @@
+[
+  { "name": "TransfarMoney", "code": "TM" },
+  { "name": "PayBackLoan", "code": "PBL" },
+  { "name": "RequestForLoan", "code": "RFL" },
+  { "name": "PayContribution", "code": "PC" }
+]
