@@ -29,30 +29,30 @@ const SlidOption = () => {
       // {userInfo.user.totalInvest},
       //buttonName: "Invest",
     },
-    {
-      id: "456",
-      title: "Loan",
-      screen: "Loan",
-      price: 4000,
-      //{ navData },
-      //buttonName: "Account",
-    },
-    {
-      id: "789",
-      title: "expensis",
-      screen: "Portfolio",
-      price: 4000,
-      //{ navData },
-      //buttonName: "Account",
-    },
-    {
-      id: "984",
-      title: "Contribution",
-      screen: "Portfolio",
-      price: 4000,
-      //{ navData },
-      // buttonName: "Account",
-    },
+    // {
+    //   id: "456",
+    //   title: "Loan",
+    //   screen: "Loan",
+    //   price: 4000,
+    //   //{ navData },
+    //   //buttonName: "Account",
+    // },
+    // {
+    //   id: "789",
+    //   title: "expensis",
+    //   screen: "Portfolio",
+    //   price: 4000,
+    //   //{ navData },
+    //   //buttonName: "Account",
+    // },
+    // {
+    //   id: "984",
+    //   title: "Contribution",
+    //   screen: "Portfolio",
+    //   price: 4000,
+    //   //{ navData },
+    //   // buttonName: "Account",
+    // },
   ];
 
   useFocusEffect(
@@ -86,18 +86,12 @@ const SlidOption = () => {
           <View
             style={{
               flexDirection: "row",
-              //padding: 2,
               justifyContent: "space-between",
             }}
           >
-            <Text style={styles.txt}>{item.title}</Text>
+            <Text style={styles.prtxt}>{item.title}</Text>
             {shouldShow ? (
-              <TouchableOpacity
-                onPress={
-                  () => visibility()
-                  //setShouldShow(!shouldShow)
-                }
-              >
+              <TouchableOpacity onPress={() => visibility()}>
                 <FontAwesome name="eye-slash" size={24} color="white" />
               </TouchableOpacity>
             ) : (
@@ -118,7 +112,7 @@ const SlidOption = () => {
                   style={{
                     flexDirection: "row",
                     //padding: 10,
-                    marginTop: 15,
+                    marginTop: 10,
                     justifyContent: "space-between",
                   }}
                 >

@@ -8,6 +8,7 @@
     "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
+      "backgroundColor": "#FCDEBD",
       "resizeMode": "cover",
       "width": "100%",
       "height": "100%"

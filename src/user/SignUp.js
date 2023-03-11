@@ -7,7 +7,6 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import styles from "../shared/mainstyles";
-//import { Picker } from "@react-native-picker/picker";
 import Input from "../shared/input";
 import { AntDesign } from "@expo/vector-icons";
 import { Dropdown } from "react-native-element-dropdown";
@@ -16,6 +15,7 @@ import states from "../shared/dropdown/State";
 import lgas from "../shared/dropdown/Lga";
 import { KeyboardAwareScrollView } from "react-native-keyboard-aware-scroll-view";
 import { useNavigation } from "@react-navigation/native";
+
 const SignUp = () => {
   const navigation = useNavigation();
   const [firstName, setFirstName] = useState();
@@ -78,7 +78,10 @@ const SignUp = () => {
   return (
     <SafeAreaView style={styles.container}>
       <View>
-        <TouchableOpacity onPress={navigation.goBack} style={styles.iconi}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("SignIn")}
+          style={styles.iconi}
+        >
           <AntDesign name="arrowleft" size={24} color="black" />
         </TouchableOpacity>
       </View>

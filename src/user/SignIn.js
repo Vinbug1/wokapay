@@ -115,14 +115,15 @@ const SignIn = () => {
         </View>
         <View style={{ flexDirection: "column", marginTop: 30 }}>
           <Image
-            source={{
-              // uri: image
-              //   ? image
-              //   : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMUd2QNPAzLBXFWpGXejLlg5SIbeNcKMQ6Ng&usqp=CAU",
-              uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMUd2QNPAzLBXFWpGXejLlg5SIbeNcKMQ6Ng&usqp=CAU",
-            }}
+            //source={{
+            // uri: image
+            //   ? image
+            //   : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMUd2QNPAzLBXFWpGXejLlg5SIbeNcKMQ6Ng&usqp=CAU",
+            //}}
+
+            source={require("../.././assets/images/userimg.png")}
             style={styles.uimg}
-            resizeMode="contain"
+            resizeMode="cover"
           />
         </View>
         <View style={{ marginTop: 150, alignSelf: "center", marginRight: 45 }}>

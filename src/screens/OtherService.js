@@ -14,56 +14,12 @@ import {
 const OtherService = () => {
   const [isModalVisible, setModalVisible] = useState(false);
   const navigation = useNavigation();
+
   const toggleModal = () => {
     setModalVisible(!isModalVisible);
   };
   const offtoggleModal = () => {
     setModalVisible(false);
-  };
-
-  const topUp = async () => {
-    const permissionResult =
-      await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (permissionResult.granted === false) {
-      alert("You've refused to allow this appp to access your photos!");
-      return;
-    }
-    const result = await ImagePicker.launchImageLibraryAsync();
-    if (!result.cancelled) {
-      setPickedImagePath(result.uri);
-      console.log(result.uri);
-      toggleModal();
-    }
-  };
-
-  const power = async () => {
-    const permissionResult =
-      await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (permissionResult.granted === false) {
-      alert("You've refused to allow this appp to access your photos!");
-      return;
-    }
-    const result = await ImagePicker.launchImageLibraryAsync();
-    if (!result.cancelled) {
-      setValidId(result.uri);
-      console.log(result.uri);
-      toggleModal();
-    }
-  };
-
-  const cable = async () => {
-    const permissionResult =
-      await ImagePicker.requestMediaLibraryPermissionsAsync();
-    if (permissionResult.granted === false) {
-      alert("You've refused to allow this appp to access your photos!");
-      return;
-    }
-    const result = await ImagePicker.launchImageLibraryAsync();
-    if (!result.cancelled) {
-      setOfferLetter(result.uri);
-      console.log(result.uri);
-      toggleModal();
-    }
   };
 
   return (
@@ -120,7 +76,10 @@ const OtherService = () => {
             </TouchableOpacity>
           </View>
           <View style={{ marginTop: 25, flexDirection: "row" }}>
-            <TouchableOpacity onPress={() => topUp()} style={styles.btnsmm}>
+            <TouchableOpacity
+              onPress={() => navigation.navigate("TopUpScreen")}
+              style={styles.btnsmm}
+            >
               <FontAwesome
                 name="credit-card"
                 size={45}

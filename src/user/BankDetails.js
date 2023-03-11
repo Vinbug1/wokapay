@@ -44,7 +44,10 @@ const BankDetails = () => {
           marginTop: 20,
         }}
       >
-        <TouchableOpacity onPress={navigation.goBack} style={styles.iconi}>
+        <TouchableOpacity
+          onPress={() => navigation.navigate("NextDetails")}
+          style={styles.iconi}
+        >
           <AntDesign name="arrowleft" size={24} color="black" />
         </TouchableOpacity>
       </View>

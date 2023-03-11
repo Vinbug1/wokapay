@@ -8,7 +8,6 @@ import {
 } from "react-native";
 import React, { useState } from "react";
 import styles from "../shared/mainstyles";
-//import { Picker } from "@react-native-picker/picker";
 import Input from "../shared/input";
 import { AntDesign } from "@expo/vector-icons";
 import { Dropdown } from "react-native-element-dropdown";
@@ -79,9 +78,18 @@ const NextDetails = () => {
   };
   return (
     <SafeAreaView style={styles.container}>
-      <TouchableOpacity onPress={navigation.goBack} style={styles.iconi}>
-        <AntDesign name="arrowleft" size={24} color="black" />
-      </TouchableOpacity>
+      <View
+        style={{
+          marginTop: 5,
+        }}
+      >
+        <TouchableOpacity
+          onPress={() => navigation.navigate("CivilDetails")}
+          style={styles.iconi}
+        >
+          <AntDesign name="arrowleft" size={24} color="black" />
+        </TouchableOpacity>
+      </View>
       <ScrollView style={{ marginTop: Platform.OS === "ios" ? 0 : 30 }}>
         <View style={{ alignSelf: "center" }}>
           <Text style={{ padding: 9, fontWeight: "bold" }}>Other Details</Text>

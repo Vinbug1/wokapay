@@ -53,14 +53,19 @@ const ResetPin = () => {
 
   return (
     <SafeAreaView>
+      <View>
+        <TouchableOpacity
+          style={styles.iconi}
+          onPress={() => navigation.goBack("SignIn")}
+        >
+          <AntDesign name="arrowleft" size={24} color="black" />
+        </TouchableOpacity>
+      </View>
       <KeyboardAwareScrollView
         extraHeight={10}
         enableAutomaticScroll={true}
         style={{ marginTop: Platform.OS === "android" ? 25 : 15 }}
       >
-        <TouchableOpacity onPress={navigation.goBack} style={styles.iconi}>
-          <AntDesign name="arrowleft" size={24} color="black" />
-        </TouchableOpacity>
         <View style={{ marginTop: 10 }}>
           <Image
             source={require("../../assets/images/pg-preview.png")}

@@ -157,8 +157,15 @@ const CivilDetails = () => {
 
   return (
     <SafeAreaView>
-      <View>
-        <TouchableOpacity onPress={navigation.goBack} style={styles.iconi}>
+      <View
+        style={{
+          marginTop: 20,
+        }}
+      >
+        <TouchableOpacity
+          onPress={() => navigation.navigate("SignUp")}
+          style={styles.iconi}
+        >
           <AntDesign name="arrowleft" size={24} color="black" />
         </TouchableOpacity>
       </View>
