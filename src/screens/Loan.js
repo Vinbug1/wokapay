@@ -1,24 +1,43 @@
-import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
+import { Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "../shared/mainstyles";
-import { AntDesign } from "react-native-vector-icons";
+import { AntDesign, MaterialCommunityIcons } from "react-native-vector-icons";
+import { useNavigation } from "@react-navigation/native";
 
 const Loan = () => {
+  const navigation = useNavigation();
   return (
     <View>
       <Text>Loan</Text>
-      <View>
-        <TouchableOpacity
-          onPress={() => navigation.navigate("NewPatient")}
-          style={styles.fab}
-        >
-          <AntDesign name="addusergroup" size={25} color="white" />
-        </TouchableOpacity>
+      <View
+        style={{
+          flexDirection: "column",
+          alignSelf: "flex-end",
+          justifyContent: "space-around",
+        }}
+      >
+        <View style={{ top: -105, padding: 35 }}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("NewPatient")}
+            style={styles.fab}
+          >
+            <MaterialCommunityIcons name="hand-coin" size={28} color="white" />
+            <Text style={{ color: "white", fontWeight: "bold" }}>Pay</Text>
+          </TouchableOpacity>
+        </View>
+
+        <View style={{ top: -80, padding: 25 }}>
+          <TouchableOpacity
+            onPress={() => navigation.navigate("NewPatient")}
+            style={styles.fab}
+          >
+            <AntDesign name="addusergroup" size={25} color="white" />
+            <Text style={{ color: "white", fontWeight: "bold" }}>Group</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </View>
   );
 };
 
 export default Loan;
-
-const styles = StyleSheet.create({});

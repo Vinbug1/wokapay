@@ -10,13 +10,12 @@ import SideNavigation from "./SideNavigation";
 import ResetPin from "../user/ResetPin";
 import NextDetails from "../user/NextDetails";
 import CodeVerify from "../user/CodeVerify";
-import TopUpScreen from "../screens/TopUpScreen";
 const Stack = createNativeStackNavigator();
 
 const Navigator = () => {
   return (
     <Stack.Navigator
-      initialRouteName="Onboard"
+      initialRouteName="SignIn"
       screenOptions={{ headerShown: false }}
     >
       <Stack.Screen name="SignIn" component={SignIn} />
@@ -28,7 +27,6 @@ const Navigator = () => {
       <Stack.Screen name="NextDetails" component={NextDetails} />
       <Stack.Screen name="Verification" component={Verification} />
       <Stack.Screen name="SideNavigation" component={SideNavigation} />
-      <Stack.Screen name="TopUpScreen" component={TopUpScreen} />
     </Stack.Navigator>
   );
 };

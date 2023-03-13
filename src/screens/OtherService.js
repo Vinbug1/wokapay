@@ -22,6 +22,9 @@ const OtherService = () => {
     setModalVisible(false);
   };
 
+  const cableModal = () => {
+    setModalVisible(false);
+  };
   return (
     <View style={styles.wtouch}>
       <View
@@ -77,7 +80,9 @@ const OtherService = () => {
           </View>
           <View style={{ marginTop: 25, flexDirection: "row" }}>
             <TouchableOpacity
-              onPress={() => navigation.navigate("TopUpScreen")}
+              onPress={() => {
+                navigation.navigate("TopUp"), offtoggleModal();
+              }}
               style={styles.btnsmm}
             >
               <FontAwesome
@@ -88,7 +93,12 @@ const OtherService = () => {
               />
               <Text style={styles.txtsmm}>TopUp</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => power()} style={styles.btnsmm}>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("PurcahsPowerToken"), offtoggleModal();
+              }}
+              style={styles.btnsmm}
+            >
               <MaterialCommunityIcons
                 name="lightning-bolt-outline"
                 size={45}
@@ -97,7 +107,12 @@ const OtherService = () => {
               />
               <Text style={styles.txtsmm}>Power</Text>
             </TouchableOpacity>
-            <TouchableOpacity onPress={() => cable()} style={styles.btnsmm}>
+            <TouchableOpacity
+              onPress={() => {
+                navigation.navigate("CableSubscription"), offtoggleModal();
+              }}
+              style={styles.btnsmm}
+            >
               <MaterialCommunityIcons
                 name="cable-data"
                 size={45}

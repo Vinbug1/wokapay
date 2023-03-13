@@ -2,7 +2,6 @@ import { Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import styles from "../shared/mainstyles";
 import { AntDesign, MaterialCommunityIcons } from "react-native-vector-icons";
-import ReactCurvedText from "react-curved-text";
 import { useNavigation } from "@react-navigation/native";
 const Contribution = () => {
   const navigation = useNavigation();

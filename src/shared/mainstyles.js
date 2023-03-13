@@ -378,7 +378,7 @@ module.exports = StyleSheet.create({
     },
   },
   vtouch: {
-    backgroundColor: "#FCDEBD",
+    backgroundColor: "#f5ede4",
     width: width,
     height: Platform.OS === "android" ? width : height / 2,
     margin: 3,
